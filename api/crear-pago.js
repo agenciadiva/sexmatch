@@ -1,8 +1,4 @@
-// api/crear-pago.js — Vercel Serverless Function
-// El Access Token vive acá (server-side), nunca llega al browser
-
 export default async function handler(req, res) {
-  // CORS para desarrollo local
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
@@ -16,7 +12,7 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: 'Faltan sessionId o userId' });
   }
 
-  const appUrl = process.env.VITE_APP_URL || 'http://localhost:5173';
+  const appUrl = 'https://sexmatch.vercel.app';
 
   const preference = {
     items: [
@@ -26,7 +22,7 @@ export default async function handler(req, res) {
         description: 'Desbloqueá todas las coincidencias y el segundo bloque de preguntas',
         quantity: 1,
         currency_id: 'ARS',
-        unit_price: 4990, // $4990 ARS — ajustar al precio real
+        unit_price: 4990,
       },
     ],
     external_reference: sessionId,
@@ -52,16 +48,15 @@ export default async function handler(req, res) {
     const data = await mpRes.json();
 
     if (!mpRes.ok) {
-      console.error('MP error:', data);
+      console.error('MP error:', JSON.stringify(data));
       return res.status(500).json({ error: 'Error al crear preferencia', detail: data });
     }
 
-    // init_point = producción / sandbox_init_point = test
     const url = data.sandbox_init_point || data.init_point;
     return res.status(200).json({ url, preferenceId: data.id });
 
   } catch (err) {
-    console.error('Error servidor:', err);
+    console.error('Error servidor:', err.message);
     return res.status(500).json({ error: 'Error interno del servidor' });
   }
 }
