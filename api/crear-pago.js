@@ -22,7 +22,7 @@ export default async function handler(req, res) {
         description: 'Desbloqueá todas las coincidencias y el segundo bloque de preguntas',
         quantity: 1,
         currency_id: 'ARS',
-        unit_price: 4990,
+        unit_price: 100,
       },
     ],
     external_reference: sessionId,
