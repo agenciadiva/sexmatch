@@ -39,13 +39,17 @@ export default function Paywall({ sessionId, userId }) {
         <h2>Desbloqueá todo</h2>
         <p className="hint">Accedé a todas las coincidencias y continuá con las preguntas más profundas.</p>
 
-        <div className="paywall-features">
-          <div className="pw-feat">✅ Todas las coincidencias del primer bloque</div>
-          <div className="pw-feat">✅ Segundo bloque de preguntas</div>
-          <div className="pw-feat">✅ Análisis de compatibilidad final</div>
-        </div>
+       <div className="paywall-features">
+  <div className="pw-feat">✅ Todas las coincidencias del primer bloque</div>
+  <div className="pw-feat">✅ Segundo bloque de preguntas</div>
+  <div className="pw-feat">✅ Análisis de compatibilidad final</div>
+</div>
 
-        <div className="price-tag">$4.990</div>
+<div className="paywall-note">
+  💜 <strong>Un único pago por pareja.</strong> No importa quién pague, ambos desbloquean la experiencia completa.
+</div>
+
+<div className="price-tag">$4.990</div>
 
         {error && <p className="error">{error}</p>}
 
