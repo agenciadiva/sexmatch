@@ -52,8 +52,8 @@ export default async function handler(req, res) {
       return res.status(500).json({ error: 'Error al crear preferencia', detail: data });
     }
 
-    const url = data.sandbox_init_point || data.init_point;
-    return res.status(200).json({ url, preferenceId: data.id });
+ const url = data.init_point;
+return res.status(200).json({ url, preferenceId: data.id });
 
   } catch (err) {
     console.error('Error servidor:', err.message);
