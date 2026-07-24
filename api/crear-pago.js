@@ -12,7 +12,7 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: 'Faltan sessionId o userId' });
   }
 
-  const appUrl = 'https://sexmatch.vercel.app';
+  const appUrl = 'https://matches.com.ar';
 
   const preference = {
     items: [

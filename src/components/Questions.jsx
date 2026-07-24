@@ -42,8 +42,11 @@ export default function Questions({ questions, sessionId, userId, existingAnswer
     <div className="screen">
       <div className="q-container">
         <div className="q-header">
-          <p className="q-intro">{QUESTIONS_INTRO}</p>
-        </div>
+  <p className="q-intro">{QUESTIONS_INTRO}</p>
+  <p className="q-note">
+    🔒 Respondé con total honestidad. Tu pareja solo verá las coincidencias entre ambos.
+  </p>
+</div>
 
         {questions.map((q, i) => (
           <div key={q.id} className="q-card">

@@ -49,7 +49,7 @@ export default function Paywall({ sessionId, userId }) {
   💜 <strong>Un único pago por pareja.</strong> No importa quién pague, ambos desbloquean la experiencia completa.
 </div>
 
-<div className="price-tag">$4.990</div>
+<div className="price-tag">$100arg</div>
 
         {error && <p className="error">{error}</p>}
 

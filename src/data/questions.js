@@ -1,5 +1,7 @@
 // Intro mostrada arriba de las preguntas
-export const QUESTIONS_INTRO = 'Del 1 al 10, ¿cuánto te gustaría probar o hacer esto con tu pareja?';
+export const QUESTIONS_INTRO = 'Del 1 al 10, ¿cuánto te gustaría probar o hacer esto con tu pareja?'; 
+export const QUESTIONS_NOTICE =
+  '🔒 Respondé con total honestidad. Tu pareja solo verá las coincidencias entre ambos.';
 
 export const questions = [
   // ── Bloque 1 ──────────────────────────────────────────────
