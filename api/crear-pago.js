@@ -19,7 +19,7 @@ export default async function handler(req, res) {
       {
         id: 'sexmatch-unlock',
         title: 'Sex Match — Resultados completos',
-        description: 'Desbloqueá todas las coincidencias y el segundo bloque de preguntas',
+        description: 'MATCHES: Desbloqueá todas las coincidencias y el segundo bloque de preguntas',
         quantity: 1,
         currency_id: 'ARS',
         unit_price: 100,
