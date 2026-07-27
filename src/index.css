@@ -312,10 +312,52 @@ h2 { font-size: 1.35rem; font-weight: 700; }
   line-height: 1.4;
 }
 
+.price-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0 24px;
+}
+
+.price-old {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-decoration: line-through;
+  opacity: 0.9;
+}
+
+.price-launch {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  padding: 8px 14px;
+
+  background: var(--bg3);
+  border: 1px solid var(--border2);
+  border-radius: 999px;
+
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1;
+
+  background-image: linear-gradient(135deg, #e8609a, #b044d0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 .price-tag {
-  font-size: 2.2rem;
+  font-size: 3.2rem;
   font-weight: 800;
-  background: linear-gradient(135deg, #c94f8a, #9b3fcf);
+  line-height: 1;
+  letter-spacing: -1px;
+
+  background: linear-gradient(135deg, #e8609a, #b044d0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
