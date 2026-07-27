@@ -53,7 +53,7 @@ export default function Paywall({ sessionId, userId }) {
   <div className="price-old">$9.900</div>
 
   <div className="price-launch">
-    🎉 Oferta de lanzamiento | <strong>45% OFF</strong>
+    Oferta de lanzamiento | <strong>45% OFF</strong>
   </div>
 
   <div className="price-tag">$5.400</div>

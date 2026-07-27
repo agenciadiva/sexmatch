@@ -305,7 +305,7 @@ h2 { font-size: 1.35rem; font-weight: 700; }
 .pw-feat { font-size: 0.9rem; }
 
 .paywall-note {
-  margin: 16px 0;
+  margin: 12px 0 6px;
   font-size: 0.9rem;
   color: var(--muted);
   text-align: center;
@@ -318,7 +318,7 @@ h2 { font-size: 1.35rem; font-weight: 700; }
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  margin: 8px 0 24px;
+  margin: 0 0 24px;
 }
 
 .price-old {
@@ -352,7 +352,7 @@ h2 { font-size: 1.35rem; font-weight: 700; }
 }
 
 .price-tag {
-  font-size: 3.2rem;
+  font-size: 2.2rem;
   font-weight: 800;
   line-height: 1;
   letter-spacing: -1px;
