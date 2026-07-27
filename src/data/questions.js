@@ -26,7 +26,7 @@ export const questions = [
   { id: 'q17', text: 'Orgías o sexo grupal', block: 2 },
   { id: 'q18', text: 'Relación abierta o relación poliamorosa', block: 2 },
   { id: 'q19', text: 'Juegos eróticos con alimentos (chocolate, frutas, helados)', block: 2 },
-  { id: 'q20', text: 'Fetiches corporales (pies, manos, cabello)', block: 2 },
+  { id: 'q20', text: 'Fetiches corporales (pies, manos, pelo)', block: 2 },
   { id: 'q21', text: 'Ver porno juntos', block: 2 },
   { id: 'q22', text: 'Sexo en la pileta o en la ducha', block: 2 },
   { id: 'q23', text: 'Sexo sensorial (vendas, texturas o temperatura)', block: 2 },
