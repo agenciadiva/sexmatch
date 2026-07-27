@@ -290,7 +290,10 @@ h2 { font-size: 1.35rem; font-weight: 700; }
 }
 
 /* ── Paywall ───────────────────────────────────────────────── */
-.paywall-card { max-width: 380px; }
+.paywall-card {
+  max-width: 380px;
+  gap: 8px;
+}
 .paywall-features {
   background: var(--bg3);
   border: 1px solid var(--border);
@@ -318,7 +321,7 @@ h2 { font-size: 1.35rem; font-weight: 700; }
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  margin: -4px 0 24px;
+  margin: -4px 0 4px;
 }
 
 .price-old {
